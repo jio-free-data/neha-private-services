@@ -1,40 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.btn {
-  margin-top: 40%;
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: RoyalBlue;
-}
-img {
-  width: 90%;
-  display: block;
-  margin: 20px auto;
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container {
+            position: relative;
+            width: 90%; /* Capture 90% of the screen width */
+            margin: 20px auto; /* Center the container */
+        }
+        .image {
+            width: 100%; /* Full width of the container */
+            display: block;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            border: none;
+            border-radius: 50%;
+            width: 60px; /* Size of the button */
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .play-button i {
+            font-size: 24px; /* Icon size */
+            color: DodgerBlue; /* Icon color */
+        }
+        .btn {
+            margin-top: 20px;
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+            width: 100%;
+        }
+        .btn:hover {
+            background-color: RoyalBlue;
+        }
+    </style>
 </head>
 <body>
-
-<a href="#" download="Free Recharge"><button class="btn" style="width:100%"><i class="fa fa-download"></i> Download Now</button></a>
-<img src="your-image.png" alt="Video"/>
+    <div class="container">
+        <img src="your-image-url.jpg" alt="Description of Image" class="image">
+        <button class="play-button"><i class="fa fa-play"></i></button>
+    </div>
+    <a href="#" download="Free Recharge">
+        <button class="btn"><i class="fa fa-download"></i> Download Now</button>
+    </a>
 </body>
 </html>
