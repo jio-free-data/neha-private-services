@@ -6,45 +6,52 @@
     <style>
         .container {
             position: relative;
-            width: 90%;
-            margin: 20px auto;
+            width: 90%; /* Capture 90% of the screen width */
+            margin: 20px auto; /* Center the container */
         }
         .image {
-            width: 95%;
+            width: 95%; /* Full width of the container */
             display: block;
-            filter: blur(5px);
+            filter: blur(5px); /* Blur effect */
         }
         .play-button {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            background: linear-gradient(135deg, #ff6b6b, #f7a9a9); /* Attractive gradient */
             border: none;
             border-radius: 50%;
-            width: 60px;
+            width: 60px; /* Size of the button */
             height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            transition: transform 0.3s; /* Smooth transition */
+        }
+        .play-button:hover {
+            transform: translate(-50%, -50%) scale(1.1); /* Slightly enlarge on hover */
         }
         .play-button i {
-            font-size: 24px;
-            color: DodgerBlue;
+            font-size: 24px; /* Icon size */
+            color: white; /* Icon color */
         }
         .btn {
             margin-top: 20px;
-            background-color: DodgerBlue;
+            background: linear-gradient(135deg, #4caf50, #81c784); /* Attractive gradient */
             border: none;
             color: white;
             padding: 12px 30px;
             cursor: pointer;
             font-size: 20px;
             width: 100%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            transition: background 0.3s; /* Smooth transition */
         }
         .btn:hover {
-            background-color: RoyalBlue;
+            background: linear-gradient(135deg, #388e3c, #66bb6a); /* Darker gradient on hover */
         }
     </style>
 </head>
